@@ -1,1 +1,1 @@
-Redux App craetd with react native
+Redux App created with react native
