@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-// could use instead: https://picsum.photos
+// const API_URL = 'https://picsum.photos/v2/list';
 const API_URL = 'https://jsonplaceholder.typicode.com';
 
 export const FETCH_PHOTOS = 'FETCH_PHOTOS';
