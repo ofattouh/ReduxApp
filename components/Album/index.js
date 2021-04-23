@@ -15,11 +15,11 @@ import {fetchPhotos, addPhoto, removePhoto} from '../../redux/photos/actions';
 
 class Album extends Component {
   // Test persistence of Redux store by delaying call to fetchPhotos, to check for persisted
-  // data before being fetched again from the API
+  // data before being fetched again from the API (caching)
   componentDidMount() {
     setTimeout(() => {
       this.props.fetchPhotos();
-    }, 2000);
+    }, 1000);
   }
 
   addPhoto = () => {
@@ -88,7 +88,8 @@ const styles = StyleSheet.create({
   },
   image: {
     height: 300,
-    width: 300,
+    width: 350,
+    margin: 20,
   },
   button: {
     margin: 10,
